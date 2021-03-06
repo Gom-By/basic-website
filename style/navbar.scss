@@ -1,0 +1,83 @@
+#nav { // navbar mode pc
+    @media screen and (max-width: 600px){
+        background-color: red;
+        display: none;
+    }
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-height: 50px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(70, 67, 67);
+    padding: 25px;
+    border-bottom: 1px solid black;
+    #list-links {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+        .item-links {
+            color: white;
+            // border: 1px solid red;
+            text-decoration: none;
+            text-align: center;
+            #contact-link, #project-link, #about-link {
+                color: wheat;
+                &:hover {
+                    color: rgb(73, 135, 192);
+                    font-size: 20px;
+                    transition: .5s;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+#icon-link { // icon for mobile mode
+    @media screen and (min-width: 600px){ display: none; }
+    padding: 9px 0px 0px 13px;
+    position: fixed;
+    top: 10px; right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(230, 216, 216, 0.548);
+    font-size: 40px;
+    &:hover {
+        background-color: rgb(184, 174, 174);  
+        transition: .5s;
+    }
+}
+#nav-mobile { // page mobile for navbar
+    background-color: rgb(233, 61, 61);
+    color: white;
+    display: none;
+    height: 100vh;
+    overflow-y: hidden;
+    #mobile-list-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 100px;
+        .mobile-item-links {
+            border: 1px solid red;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+            margin: 6.5px 0;
+            background-color: red;
+            &:hover {
+                background-color: lightgray;
+                color: black;
+                transition: .5s;
+            }
+        }
+    }
+}

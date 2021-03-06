@@ -1,0 +1,27 @@
+@import "navbar";
+@import "hero";
+@import "container";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.p-container {
+    font-family: 'Piazzolla', cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.span-style {
+    color: rgb(38, 138, 133);
+    text-shadow: 1px 2px 10px white;
+    font-style: italic;
+}
+
+.p-short, .p-describe-project { font-family: 'Merriweather Sans', cursive; }
+
+.h1-container {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}

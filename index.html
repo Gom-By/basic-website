@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather+Sans:ital@1&family=Pacifico&family=Piazzolla:wght@300&family=Ribeye+Marrow&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation section #nav -->
+    <nav id="nav">
+        <ul id="list-links">
+            <li class="item-links"><a href="#about" id="about-link">ABOUT</a></li>
+            <li class="item-links"><a href="#project" id="project-link">PROJECT</a></li>
+            <li class="item-links"><a href="#contact" id="contact-link">CONTACT</a></li>
+        </ul>                 
+    </nav>
+
+    <!-- nav mobile mode -->
+    <div class="fa fa-list" id="icon-link"></div>
+    <div id="nav-mobile">
+        <ul id="mobile-list-links">
+            <li class="mobile-item-links"><a onclick="goToAbout()" id="mobile-about-link">ABOUT</a></li>
+            <li class="mobile-item-links"><a onclick="goToProject()" id="mobile-project-link">PROJECT</a></li>
+            <li class="mobile-item-links"><a onclick="goToContact()" id="mobile-contact-link">CONTACT</a></li>
+        </ul> 
+    </div>
+
+    <!-- section part #section -->
+    <div id="section">
+
+         <!-- hero section #hero-body -->
+        <header id="hero-body">
+            <h1 id="title">Guerby Naharro</h1>
+            <p id="p-hero">This is my portfolio</p>
+            <a href="http://gby-first-page.byethost9.com">Go to my cv</a>
+        </header>
+        
+        <!-- container part. All container => .container -->
+        <div class="container" id="about">
+            <h2 class="h1-container">Hello !</h2>
+            <p class="p-container">My name is <span class="span-style">Guerby Naharro</span>, I'm 16 years old and I'm a beginner programmer. I'm enjoy coding quick but instructive programs. I am learning several computer languages at the moment and I also have several projects in progress.....</p>
+            <p> Ajouter des elements plus tard</p>
+        </div>
+    
+        <div class="container" id="project">
+            <h2 class="h1-container">All of my projects</h2>
+            <p class="p-short">there are more project on github</p>
+            <div class="grid-project">
+                <div class="item-project">
+                    <p class="p-item-project">To do list</p>
+                    <img src="" alt="there are no image yet" class="img-project">
+                    <p class="p-describe-project">a todo list app who set value in local storage</p>
+                    <a href="http://gom-by.github.io/todo" class="link-project">Try</a>
+                </div>
+                <div class="item-project">
+                    <p class="p-item-project">This a project</p>
+                    <img src="" alt="there are no image yet" class="img-project">
+                    <p class="p-describe-project">A short description</p>
+                    <a href="" class="link-project">link to my project</a>
+                </div>
+                <div class="item-project">
+                    <p class="p-item-project">This a project</p>
+                    <img src="" alt="there are no image yet" class="img-project">
+                    <p class="p-describe-project">A short description</p>
+                    <a href="" class="link-project">link to my project</a>
+                </div>
+            </div>    
+        </div>
+    
+        <div class="container" id="contact">
+            <h2 class="h1-container">If you want to contact me....</h2>
+            <div id="box-contact">
+                <div class="link-reseaux">
+                    <ul id="list-reseaux">
+                        <li class="item-reseaux"><a href="http://github.com/Gom-By" id="link-github"><img src="" alt="nothing now" id="img-github"></a></li>
+                        <li class="item-reseaux"><a href="http://discord.com" id="link-discord"></a><img src="" alt="nothing now" id="img-discord"></li>
+                        <li class="item-reseaux"><a href="#" id="link-insta"><img src="" alt="nothing now" id="img-insta"></a></li>
+                        <li class="item-reseaux"><a href="#" id="link-snap"><img src="" alt="nothing now" id="img-snap"></a></li>
+                    </ul>
+                </div>
+                <form id="form-contact" action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Surname</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="messag">Message</label>
+                        <input type="textarea">
+                    </div>
+                    <input type="submit" value="submit">
+                </form> 
+            </div>
+        </div>
+
+        <!-- footer section #footer -->
+        <footer id="footer">
+            <p class="p-short"> a short footer <br> License : no license <br> Conditions d'utilisation : none <br> So..... Do what you want !</p>
+        </footer>
+    </div>
+    
+    <script src="src/script.js"></script>
+</body>
+</html>
